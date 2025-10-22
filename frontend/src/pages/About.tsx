@@ -10,7 +10,7 @@ const About: React.FC = () => {
     <section id="about" className="p-12 bg-gray-100">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <motion.h2
-          className="text-4xl font-bold text-blue-700 mb-4"
+          className="text-4xl font-bold text-blue-900 mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

@@ -5,9 +5,43 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>frontend</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png" />
+
+    <!-- Bootstrap & Custom CSS (Load these first) -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet" />
+    <link href="../../dist/css/style.min.css" rel="stylesheet" />
+
+    <!-- ✅ Tailwind CSS should come LAST so it can override Bootstrap -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ✅ Optional reset to keep Tailwind’s defaults consistent -->
+    <style>
+      *, ::before, ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
-  <body>
+
+  <body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
     <div id="root"></div>
+
+    <!-- Vite/React Entry -->
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Bootstrap JS and other scripts -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <script src="../../dist/js/waves.js"></script>
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <script src="../../dist/js/custom.min.js"></script>
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
   </body>
 </html>

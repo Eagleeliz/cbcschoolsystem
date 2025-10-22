@@ -25,7 +25,8 @@ const Navbar: React.FC = () => {
       <div className="space-x-8 hidden md:flex">
         <Link
           to="/"
-          className="flex items-center gap-2 text-white hover:text-blue-800 text-xl font-medium transition"
+          className="flex items-center gap-2 text-white
+           hover:text-blue-800 text-xl font-medium transition"
         >
           <BiHome size={25} className="text-blue-900" />
           Home
@@ -47,24 +48,24 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Right - Buttons (Desktop) */}
-      <div className="space-x-3 hidden md:flex items-center">
+      <div className="hidden md:flex items-center gap-6">
         <Link
           to="/register"
-          className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+          className="flex items-center gap-2 bg-blue-600 text-white px-6 py-2.5 rounded-md hover:bg-blue-700 text-xl font-semibold transition"
         >
-          <FaUserPlus size={16} />
+          <FaUserPlus size={18} />
           Register
         </Link>
         <Link
           to="/login"
-          className="flex items-center gap-2 border border-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition"
+          className="flex items-center gap-2 border border-blue-800 text-white px-6 py-2.5 rounded-md hover:bg-blue-800 text-xl font-semibold transition"
         >
-          <FaSignInAlt size={16} />
+          <FaSignInAlt size={18} />
           Login
         </Link>
       </div>
 
-      {/* Mobile Menu (Shown When isOpen = true) */}
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-blue-400 flex flex-col items-center space-y-4 py-4 md:hidden z-10">
           <Link

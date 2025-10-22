@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <>
     <Navbar/>
-    <section className="bg-gray-100 py-16 px-6 min-h-screen flex flex-col items-center justify-center">
+    <section className="bg-gray-100 py-16 px-60 min-h-screen flex flex-col items-center justify-center">
       <Toaster position="top-center" richColors />
       <motion.div
         initial={{ opacity: 0, y: 30 }}
